@@ -23,13 +23,18 @@
 	{% endif %}
 	</div>
 
+	<div>
+	<a href="/rango/add_category/">Add a New Category</a><br />
+	</div>
+
 	<h4>Most Viewed Pages</h4>
 	<div>
 	{% if pages %}
 	<ul>
 		{% for page in pages %}
 		<li>
-		<a href="/rango/category/page{{ page.views }}"\>{{ page.title }}</a>
+		<a href="{{ page.url }}">{{ page.title }}</a>
+		
 		</li>
 		{% endfor %}
 	</ul>
