@@ -140,3 +140,5 @@ MEDIA_URL = '/media/'
 #Ensures that login_required() decorator will redirect any user not
 #logged in to the URL /rango/login/.
 LOGIN_URL = '/rango/login/'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
